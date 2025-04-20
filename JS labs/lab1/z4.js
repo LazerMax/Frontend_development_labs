@@ -5,6 +5,7 @@ function calculateCost(groupSize, groupType, day) {
         "Обычная": { "Пятница": 15, "Суббота": 20, "Воскресенье": 22.50 }
     };
     let totalPrice = groupSize * prices[groupType][day];
+    console.log(prices.groupType.day)
 
     if (groupType === "Студенты" && groupSize >= 30) {
         totalPrice *= 0.85;
